@@ -22,6 +22,6 @@ Hey, Netology
 </body>  
 </html>  
 <img src=https://github.com/uxtuahgp/devops-study/blob/main/docker-1-1.jpg> Snap 1 </img>  
-<img src=https://github.com/uxtuahgp/devops-study/blob/main/docker-1-2.jpg> Snap 1 </img>  
+
 ## Задача 3 ##   
 ыапвапр  
