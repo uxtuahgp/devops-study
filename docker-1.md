@@ -21,6 +21,6 @@ Hey, Netology
 <h1>I will be DevOps Engineer!</h1>  
 </body>  
 </html>  
-
+![Snap1](https://github.com/uxtuahgp/devops-study/edit/main/docker-1-1.jpg)
 ## Задача 3 ## 
 ыапвапр
