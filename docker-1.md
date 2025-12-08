@@ -26,7 +26,7 @@ Hey, Netology
 ## Задача 3 ##   
 <img src=>https://github.com/uxtuahgp/devops-study/blob/main/docker-1-3-1.jpg</img>  
 Контейнер остановился так как мы в стандартный поток ввода подали сигнал прерывания процесса.  
-<img src=>https://github.com/uxtuahgp/devops-study/blob/main/docker-1-3-1.jpg</img>  
+<img src=>https://github.com/uxtuahgp/devops-study/blob/main/docker-1-3-2.jpg</img>  
 Мы на работающем контейнере изменили прослушиваемый NGINX порт на 81, но мэпинг портов не поменяли. 
 Переадресация осталась 8080 -> 80, но внутри контейнера 80 порт никто уже не слушал. 
 
