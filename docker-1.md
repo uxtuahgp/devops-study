@@ -24,4 +24,5 @@ Hey, Netology
 <img src=https://github.com/uxtuahgp/devops-study/blob/main/docker-1-1.jpg> Snap 1 </img>  
 
 ## Задача 3 ##   
-ыапвапр  
+<img src=>https://github.com/uxtuahgp/devops-study/blob/main/docker-1-3-1.jpg</img>
+
