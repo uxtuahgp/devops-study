@@ -31,4 +31,8 @@ Hey, Netology
 Переадресация осталась 8080 -> 80, но внутри контейнера 80 порт никто уже не слушал.  
 Удаление работающего контейнера командой docker rm --force имя_контейнера
 <img src=https://github.com/uxtuahgp/devops-study/blob/main/docker-1-3-3.jpg></img>  
-
+  
+## Задача 4 ##   
+<img src=https://github.com/uxtuahgp/devops-study/blob/main/docker-1-4-1.jpg></img>  
+<img src=https://github.com/uxtuahgp/devops-study/blob/main/docker-1-4-2.jpg></img>  
+<img src=https://github.com/uxtuahgp/devops-study/blob/main/docker-1-4-3.jpg></img>  
