@@ -29,4 +29,6 @@ Hey, Netology
 <img src=https://github.com/uxtuahgp/devops-study/blob/main/docker-1-3-2.jpg></img>  
 Мы на работающем контейнере изменили прослушиваемый NGINX порт на 81, но мэпинг портов не поменяли. 
 Переадресация осталась 8080 -> 80, но внутри контейнера 80 порт никто уже не слушал. 
+Удаление работающего контейнера командой docker rm --force имя_контейнера
+<img src=https://github.com/uxtuahgp/devops-study/blob/main/docker-1-3-3.jpg></img>  
 
