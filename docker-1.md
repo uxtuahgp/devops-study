@@ -25,4 +25,5 @@ Hey, Netology
 
 ## Задача 3 ##   
 <img src=>https://github.com/uxtuahgp/devops-study/blob/main/docker-1-3-1.jpg</img>
+Контейнер остановился так как мы в стандартный поток ввода подали сигнал прерывания процесса.
 
