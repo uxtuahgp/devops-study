@@ -3,6 +3,7 @@
 https://hub.docker.com/repository/docker/uxtuahgp/custom-nginx/general
 ## Задача 2 ##
 \# date +"%d-%m-%Y %T.%N %Z" ; sleep 0.150 ; docker ps ; ss -tlpn | grep 127.0.0.1:8080  ; docker logs custom-nginx-t2 -n1 ; docker exec -it custom-nginx-t2 base64 /usr/share/nginx/html/index.html
+\n
 08-12-2025 20:59:50.210979632 MSK
 CONTAINER ID   IMAGE                         COMMAND                  CREATED         STATUS         PORTS                                     NAMES
 4b9c604efcaa   uxtuahgp/custom-nginx:1.0.0   "/docker-entrypoint.…"   2 minutes ago   Up 2 minutes   0.0.0.0:8080->80/tcp, [::]:8080->80/tcp   custom-nginx-t2
