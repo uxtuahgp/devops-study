@@ -10,5 +10,16 @@ CONTAINER ID   IMAGE                         COMMAND                  CREATED   
 172.17.0.1 - - [08/Dec/2025:17:57:32 +0000] "GET / HTTP/1.1" 200 95 "-" "curl/7.81.0" "-"  
 PGh0bWw+CjxoZWFkPgpIZXksIE5ldG9sb2d5CjwvaGVhZD4KPGJvZHk+CjxoMT5JIHdpbGwgYmUg  
 RGV2T3BzIEVuZ2luZWVyITwvaDE+CjwvYm9keT4KPC9odG1sPgo=  
+### Проверка ###
+\# date +"%d-%m-%Y %T.%N %Z" ;curl http://uxtu-note:8080  
+08-12-2025 21:04:42.702055776 MSK  
+<html>  
+<head>  
+Hey, Netology  
+</head>  
+<body>  
+<h1>I will be DevOps Engineer!</h1>  
+</body>  
+</html>  
 
 ## Задача 3 ## 
