@@ -36,3 +36,5 @@ Hey, Netology
 <img src=https://github.com/uxtuahgp/devops-study/blob/main/docker-1-4-1.jpg></img>  
 <img src=https://github.com/uxtuahgp/devops-study/blob/main/docker-1-4-2.jpg></img>  
 <img src=https://github.com/uxtuahgp/devops-study/blob/main/docker-1-4-3.jpg></img>  
+## Задача 5 ##   
+<img src=https://github.com/uxtuahgp/devops-study/blob/main/docker-1-5-1.jpg></img>  
