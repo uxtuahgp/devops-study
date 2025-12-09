@@ -39,3 +39,6 @@ Hey, Netology
 ## Задача 5 ##   
 <img src=https://github.com/uxtuahgp/devops-study/blob/main/docker-1-5-0.jpg></img>  
 <img src=https://github.com/uxtuahgp/devops-study/blob/main/docker-1-5-1.jpg></img>  
+После удаления compose.yaml docker-compose предупреждает о том, что в оставшемся docker-compose.yaml нет контейнера portainer, хотя в действительности такой контейнер работает и связан с контейнером registry.
+После выполнения docker-compose up -d --remove-orphans композ удаляет этот устаревший контейнер из конфигурации сборки и забывает о нем.
+<img src=https://github.com/uxtuahgp/devops-study/blob/main/docker-1-5-2.jpg></img>  
