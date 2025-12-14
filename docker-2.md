@@ -59,7 +59,7 @@ query = "SELECT id, request_date, request_ip FROM "+db_table+" ORDER BY id DESC 
 # Задача 2 #
 ![Работа с Yandex registry](docker-2-7.jpg)  
 ![Работа с Yandex registry](docker-2-7.jpg)  
-![Отчет об уязвимостях](docker-2-vulnerabilities.csv)  
+https://github.com/uxtuahgp/devops-study/blob/main/docker-2-vulnerabilities.csv    
 
 # Задача 3 #  
 ![Работа с Yandex registry](docker-2-7.jpg)  
