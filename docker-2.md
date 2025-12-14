@@ -24,8 +24,8 @@ docker build --tag docker-2:latest -f Dockerfile.python .
 depends_on не помогало. Вероятно надо было покрутить хелсчек, но я решил просто поставить задержку 30 секунд в wait.sh с последующим запуском uvicorn main:app...  
 wait.sh установил в качестве entrypoint в compose.yaml  
 Для соединения с сервисами прокси использовал include  
-![Установлен docker compose](docker-2-4.jpg)  
-![Установлен docker compose](docker-2-5.jpg)  
+![Запусл docker compose](docker-2-4.jpg)  
+![Результат docker compose](docker-2-5.jpg)  
 ## Задача 1.3 * ##
 Для запуска приложения на ВМ  
 ### Установил python3.8-venv ###  
@@ -45,7 +45,7 @@ export DB_TABLE='reqs'
 Для venv писался отдельный compose с единственным сервисом mysql
 ### Запустил uvicorn ###
 uvicorn main:app --host 0.0.0.0 --port 5000 --reload
-![Установлен docker compose](docker-2-6.jpg)  
+![Запуск uvicorn локально в venv](docker-2-6.jpg)  
 ## Задача 3.2 * ##  
 Добавил в compose.yaml переменную DB_TABLE  
 В коде main.py добавил извлечение в переменную из переменной среды  
@@ -57,4 +57,5 @@ query = "INSERT INTO "+db_table+" (request_date, request_ip) VALUES (%s, %s)"
 
 query = "SELECT id, request_date, request_ip FROM "+db_table+" ORDER BY id DESC LIMIT 50"  
 # Задача 2 #
-
+![Работа с Yandex registry](docker-2-7.jpg)  
+# Задача 3 #  
