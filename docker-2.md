@@ -5,3 +5,5 @@
 Установил свежий docker-compose  
 ![Установлен docker compose](docker-2-2.jpg)  
 ## Задача 1  ##  
+Создал fork репозитория 
+https://github.com/uxtuahgp/shvirtd-example-python/tree/main
