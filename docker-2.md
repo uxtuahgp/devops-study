@@ -21,11 +21,18 @@ docker build --tag docker-2:latest -f Dockerfile.python .
 ![Сборка Docker образа](docker-2-3.jpg)
 ### Запуск docker compose 
 При попытке запуска приложение python падало, как в результате я понял, из-за того, что на момент его запуска БД еще не была готова.  
-depends_on не помогало. Вероятно надо было покрутить хелсчек, но я решил просто поставить задержку 30 секунд в wait.sh с последующим запуском uvicorn main:app...  
-wait.sh установил в качестве entrypoint в compose.yaml  
-Для соединения с сервисами прокси использовал include  
-![Запусл docker compose](docker-2-4.jpg)  
-![Результат docker compose](docker-2-5.jpg)  
+Добавил healthcheck в сервис db:  
+    healthcheck:  
+      test: "echo 'show databases' | mysql -hlocalhost -u${MYSQL_USER} -p${MYSQL_PASSWORD} |grep ${MYSQL_DATABASE}"  
+      timeout: 3s  
+      retries: 20  
+Добавил в сервис web depends_on:  
+    depends_on:  
+      db:  
+        condition: service_healthy  
+Проследил по логу зазапуском контейнеров  
+Проверил работу приложения с помощью curl  
+![Сборка Docker образа](docker-2-9.jpg)  
 ## Задача 1.3 * ##
 Для запуска приложения на ВМ  
 ### Установил python3.8-venv ###  
@@ -46,7 +53,7 @@ export DB_TABLE='reqs'
 ### Запустил uvicorn ###
 uvicorn main:app --host 0.0.0.0 --port 5000 --reload
 ![Запуск uvicorn локально в venv](docker-2-6.jpg)  
-## Задача 3.2 * ##  
+## Задача 1.4 * ##  
 Добавил в compose.yaml переменную DB_TABLE  
 В коде main.py добавил извлечение в переменную из переменной среды  
 db_table = os.environ.get('DB_TABLE', 'requests')  
@@ -61,4 +68,8 @@ query = "SELECT id, request_date, request_ip FROM "+db_table+" ORDER BY id DESC 
 https://github.com/uxtuahgp/devops-study/blob/main/docker-2-vulnerabilities.csv    
 
 # Задача 3 #  
-![Работа с Yandex registry](docker-2-9.jpg)  
+Для соединения с сервисами прокси использовал include  
+![Запуск docker compose](docker-2-4.jpg)  
+![Результат docker compose](docker-2-5.jpg)  
+
+![Проверка с прокси](docker-2-10.jpg)  
