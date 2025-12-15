@@ -12,9 +12,9 @@ https://github.com/uxtuahgp/shvirtd-example-python/blob/main/Dockerfile.python
 ### Создал файл .dockerignore ###   
 https://github.com/uxtuahgp/shvirtd-example-python/blob/main/.dockerignore  
 ### Склонировал репозиторий на ВМ ###   
-git clone https://github.com/uxtuahgp/shvirtd-example-python/tree/main  
+git clone https://github.com/uxtuahgp/shvirtd-example-python
 Далее при изменениях 
-docker compose down -d; sudo rm -rf ./data  
+docker compose down -d
 git pull  
 ### Сборка проекта ###
 docker build --tag docker-2:latest -f Dockerfile.python .
@@ -73,3 +73,7 @@ https://github.com/uxtuahgp/devops-study/blob/main/docker-2-vulnerabilities.csv
 ![Результат docker compose](docker-2-5.jpg)  
 
 ![Проверка с прокси](docker-2-10.jpg)  
+![Проверка бд](docker-2-11.jpg)  
+
+# Задача 4 #  
+
