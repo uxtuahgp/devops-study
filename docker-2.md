@@ -80,4 +80,9 @@ https://github.com/uxtuahgp/devops-study/blob/main/docker-2-vulnerabilities.csv
 ![Select begin](docker-2-13.jpg)  
 ![Select end(docker-2-14.jpg)  
 
+# Задача 5 * #  
+# Задача 6 #  
+![docker save(docker-2-15.jpg)  
+#  #  
+#  #  
 
