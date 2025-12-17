@@ -78,7 +78,7 @@ https://github.com/uxtuahgp/devops-study/blob/main/docker-2-vulnerabilities.csv
 # Задача 4 #  
 ![Remote context](docker-2-12.jpg)  
 ![Select begin](docker-2-13.jpg)  
-![Select end(docker-2-14.jpg)  
+![Select end](docker-2-14.jpg)  
 
 # Задача 5 * #  
 # Задача 6 #  
